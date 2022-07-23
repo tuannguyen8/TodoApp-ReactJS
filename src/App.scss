@@ -1,0 +1,87 @@
+.App{
+  //height: 100vh;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .todo{
+    padding:20px;
+    width: 500px;
+    box-shadow: 0px 0px 5px -2px #333;
+    h2 {
+      text-align: center;
+    }
+    
+    form {
+      display: flex;
+      
+      input{
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+        flex: 1;
+      }
+      button{
+        margin-left: 10px;
+        padding: 0 30px;
+        cursor: pointer;
+        background-color: #2ecc71;
+        border-radius: 3px;
+        color: white;
+      }
+    }
+  
+    ul {
+      margin-top: 10px;
+  
+      li {
+        padding: 10px 10px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px -2px #333;
+        display: flex;
+        cursor: pointer;
+        .have-done{
+          color: red;
+          margin-right: 5px;
+        }
+        .click-icon{
+          cursor: pointer;
+          &.fa-square-check{
+            color: #dfd7b7;
+            margin-right: 5px;
+          }
+          &.fa-edit{
+            margin-left: auto;
+            color: #e67e22;
+          }
+          &.fa-trash{
+            color: #e74c3c;
+            margin-left: 10px;
+          }
+          
+        }
+        
+      }
+    }
+    .div-remove{
+      display: flex;
+      justify-content: end;
+      .bottom-btn{
+        display: flex;
+        justify-content: end;
+        button{
+          color: white;
+          height: 40px;
+          width: 100px;
+          background-color: #e74c3c;
+          border-radius: 3px;
+          margin: 10px 5px 0px 5px;
+        }
+      }
+      
+    }
+    
+  }
+  
+}
